@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+
+    <style>
+        body {
+            background-color: #1d1d1d;
+            color: #ffe4c4;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                'Helvetica Neue', sans-serif;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section, header {
+            border-radius: 2rem;
+            background-color: #25262d;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 0.0625rem solid #ffffff32;
+        }
+
+        button{
+            height: 3rem;
+            border-radius: 2rem;
+            border: none;
+            padding: .5rem 1rem;
+            font-weight: 500;
+            font-size: 1.125rem;
+            color: #ffffff;
+            background-color: #1d1d1d;
+            border: 0.25rem solid;
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Introdução ao JavaScript</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é o JavaScript?</h2>
+
+            <p>No desenvolvimento web, trabalha especificamente com duas
+                outras linguagens:</p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+
+            <p><strong>ATENÇÃO:</strong> JavaScript NÃO é Java!!!</p>
+            <p>Apesar dos nomes, são linguagens de
+                programação totalmente diferentes.</p>
+        </section>
+
+        <section>
+            <h2>O que da pra fazer com JavaScript</h2>
+            <p> Atualmente, é possivel trabalhar com o JavaScript das seguintes maneiras: </p>
+
+            <h3> FrontEnd</h3>
+            <ul>
+                <li>Criar estruturas interativas</li>
+                <li> Menus </li>
+                <li> Validações </li>
+                <li> Filtros </li>
+                <li> Animações </li>
+                <li> Dashboards </li>
+                <li> Aplicações gerais com Reacy, Vue, Angulas e etc. </li>
+            </ul>
+
+             <h3> Backend</h3>
+            <ul>
+                <li> Criar API´s </li>
+                <li> Autenticação </li>
+                <li> Integração com seviços </li>
+                <li> Processamento de requisições </li>
+                <li> Integrações com bancos de dados </li>
+            </ul>
+
+            <h3> Aplicações Mobile/Desktop </h3>
+            <ul>
+                <li> Aplcativos para celulares </li>
+                <li> Aplicativos para Desktops </li>
+                <li> Geralmente utilizamos React Native ou Electron </li>
+            </ul>
+
+            <p> <strong> Lembrete: </strong> A linguagem não fornece todos esses elementos sozinhos. 
+            As possibilidades citadas acima, dependem também do ambiente de execução, de API´s, bibliotecas e frameworks utilizados. </p>
+
+        </section>
+
+        <section>
+            <h2> Como aplicar o JavaScript?</h2>
+            <p> Existem três formas de aplicar o JavaScript dentro do HTML sendo elas: </p>
+            <ul>
+                <li>Inline</li>
+                <li>Interno</li>
+                <li>Externo</li>
+            </ul>
+
+            <h3> JavaScript Inline</h3>
+            <p> Ness abordagem, o JavaScript é escrito diretamente no atributo de um elemento HTML. Exemplo: </p>
+
+            <button type="button" onclick="alert('Olá mundo! Deu certo')"> Clique aqui</button>
+
+            <hr>
+            <h3> JavaScript Interno </h3>
+            <p> Nessa abordagem o JavaScript é escrito dentro da tag <code> &lt; script &gt;</code>, no próprio HTML. Exemplo: </p>
+
+            <button type="button" id="botao" > Trocar cor de fundo do site</button>
+        </section>
+    </main>
+
+    <script>
+        const botao = document.querySelector("#botao")
+
+        botao.addEventListener("click", function(){
+            document.body.style.background = "#e76f6f"
+        })
+        
+    </script>
+</body>
+
+</html>
