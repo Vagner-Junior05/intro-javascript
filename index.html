@@ -124,17 +124,30 @@
             <p> Nessa abordagem o JavaScript é escrito dentro da tag <code> &lt; script &gt;</code>, no próprio HTML. Exemplo: </p>
 
             <button type="button" id="botao" > Trocar cor de fundo do site</button>
+
+            <article>
+                <h3> JavaScript Externo </h3>
+                <p> Nessa abordagem, o JavaScripté escrito em um arquivo separado, utilizando a extensão .js, sedno configurado no atributo src da tag de <code> &lt;scrip&gt; </code>. Exemplo: </p>
+            </article>
         </section>
     </main>
 
+
+<!--Aplicando JavaScript Interno -->
     <script>
         const botao = document.querySelector("#botao")
 
         botao.addEventListener("click", function(){
             document.body.style.background = "#e76f6f"
         })
-        
+
     </script>
+
+<!--Aplicando JavaScript Externo -->
+
+    <!-- <script src="ola-mundo.js"></script> -->
+    <script src="01-variaveis.js"></script>    
+
 </body>
 
 </html>
